@@ -1,0 +1,22 @@
+{
+    "name": "Harvest mini window",
+    "description": "display a window with your harvest tasks",
+    "version": "0.1",
+
+    "permissions": [
+        "activeTab"
+    ],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "content_scripts": [{
+        "matches": ["https://carpool.harvestapp.com/*"],
+        "css": ["harvest.css"],
+        "js" : ["js/jquery-2.0.3.min.js","harvest.js"]
+    }],
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_title": "Harvest Time"
+    },
+    "manifest_version": 2
+}

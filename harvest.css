@@ -1,0 +1,141 @@
+/* Harvest Time Window
+ By: Dave Means */
+
+@media all and (max-width: 520px) and (min-width: 0px) {
+    html {
+        width: 325px !important;
+        height: 100vh !important;
+        overflow: hidden;
+    }
+    span.js-sum-for-day {
+        display: none !important;
+    }
+    a.js-day.button {
+        height: 2.2em;
+        width: 3em;
+    }
+    ul.day-view-week-nav.do-not-print > li:last-of-type {
+        display: none;
+    }
+    .day-view-entry .entry-info {
+        width: initial !important;
+    }
+    button.button.button-large{
+        font-size: 0px;
+        width: 50px;
+        color: transparent;
+    }
+    .task-notes {
+        display: none;
+    }
+    .js-root-view.day-view-wrapper.js-with-models.js-harvest-current-view {
+        margin: auto 0;
+    }
+    .wrapper {
+        width: initial !important;
+    }
+    nav.nav-green.main-navigation.js-nav {
+        display: none;
+    }
+    .weekly-controller.index-action .modal-container {
+        width: 100vw;
+        right: 0;
+        padding: 0;
+        left: 0%;
+        margin-left: 0;
+    }
+    footer#global-footer {
+        display: none;
+    }
+    body.weekly-controller.index-action {
+        overflow: hidden;
+    }
+    button.button.button-primary.button-new.button-icon-only.do-not-print.button-new-time-entry.js-new-time-entry {
+        position: relative !important;
+        display: inline-block !important;
+        margin-left: 10px !important;
+        margin-top: -60px !important;
+    }
+    .weekly-controller.index-action .modal-container {
+        width: 100vw !important;
+        margin-left: 0 !important;
+        padding-bottom: 20px;
+    }
+    header#global-header {
+        margin-bottom: 10px;
+    }
+    .pull-right.do-not-print {
+        float: none;
+        margin: 0 auto;
+    }
+    li {}
+    .day-view-week-nav>li:nth-of-type(7)>a {
+        border-top-right-radius: 4px;
+    }
+    ul.day-view-week-nav.do-not-print {
+        margin: 0 auto;
+        display: block;
+        position: relative;
+        /* padding-left: 20px; */
+    }
+    body > div.sticky-footer-wrap > main header > div.pull-right.do-not-print {
+        display: none;
+    }
+    button.button.button-primary.button-new.button-icon-only.do-not-print.button-new-time-entry.js-new-time-entry {
+        position: absolute !important;
+        top: 0 !important;
+        right: 0 !important;
+        margin-top: -100px !important;
+    }
+    button.button.button-large, button.button.button-small.button-icon-only {
+        font-size: 0px;
+        padding: 0 !important;
+        width: 50px !important;
+        height: 50px !important;
+        overflow: hidden;
+    }
+    .wrapper {
+        padding: 0 !important;
+    }
+    nav#sub-nav {
+        padding-left: 20px;
+    }
+    header.timesheet-header.clearfix {
+        margin-left: 2em;
+    }
+    a.js-day.button {
+        width: 47px !important;
+        height: 32px;
+        font-size: 1.6em;
+        padding: 3px 10px;
+        text-align: center;
+    }
+    td {
+        padding: 0px !important;
+        vertical-align: middle !important;
+        min-height: 90px !important;
+    }
+    .entry-info {
+        margin: 10px;
+    }
+    .day-view-entry td.entry-button {
+        width: 60px;
+    }
+    .modal-container button.button.button-large.button-cancel.js-cancel {
+    font-size: inherit;
+    padding: 6px 15px !important;
+    height: initial !important;
+    width: initial !important;
+}button.button.button-large.button-cancel.js-cancel {}
+
+textarea#entry-notes {
+    width: 75%;
+}
+
+.nef-duration {
+    margin-left: 60% !important;
+    width: 25% !important;
+    position: absolute !important;
+    right: 0 !important;
+}
+}
