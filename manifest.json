@@ -4,19 +4,18 @@
     "version": "0.1",
 
     "permissions": [
-        "activeTab"
+        "activeTab",
+        "storage"
     ],
-    "background": {
-        "scripts": ["background.js"]
-    },
+    "options_page": "options.html",
     "content_scripts": [{
-        "matches": ["https://carpool.harvestapp.com/*"],
-        "css": ["harvest.css"],
-        "js" : ["js/jquery-2.0.3.min.js","harvest.js"]
+        "matches": ["https://*.harvestapp.com/*"],
+        "css": ["harvest.css"]
     }],
     "browser_action": {
         "default_icon": "icon.png",
-        "default_title": "Harvest Time"
+        "default_title": "Harvest Time",
+        "default_popup": "popup.html"
     },
     "manifest_version": 2
 }
