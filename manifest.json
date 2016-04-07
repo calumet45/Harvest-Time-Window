@@ -1,7 +1,7 @@
 {
     "name": "Harvest mini window",
     "description": "display a window with your harvest tasks",
-    "version": "0.1",
+    "version": "0.1.3",
 
     "permissions": [
         "activeTab",
@@ -10,7 +10,8 @@
     "options_page": "options.html",
     "content_scripts": [{
         "matches": ["https://*.harvestapp.com/*"],
-        "css": ["harvest.css"]
+        "css": ["harvest.css"],
+        "js": ["tracker.js"]
     }],
     "browser_action": {
         "default_icon": "icon.png",

@@ -25,9 +25,9 @@
         width: 50px;
         color: transparent;
     }
-    .task-notes {
+    /*.task-notes {
         display: none;
-    }
+    }*/
     .js-root-view.day-view-wrapper.js-with-models.js-harvest-current-view {
         margin: auto 0;
     }

@@ -11,11 +11,11 @@ var message = document.querySelector('#message');
 
 // Check if there is URL specified.
 storage.get('url', function(items) {
-    console.log(items);
+    //console.log(items);
     // If there is URL specified, inject it into the page.
     if (items.url) {
       var urlClean = stripTrailingSlash(items.url);
-        chrome.windows.create({ url: urlClean + "/time", type: "detached_panel", width: 325, height: 800, top: 0, focused: true }, function() {
+        chrome.windows.create({ url: urlClean + "/time", type: "detached_panel", width: 325, height: 800, top: 0, left: 0, focused: true }, function() {
             if (chrome.runtime.lastError) {
                 message.innerText = 'ERROR';
             } else {}
@@ -28,8 +28,16 @@ storage.get('url', function(items) {
 });
 
 function stripTrailingSlash(str) {
-    if(str.substr(-1) === '/') {
-        return str.substr(0, str.length - 1);
+    var re = /https:\/\/[^\/]*/; 
+var m;
+ 
+if ((m = re.exec(str)) !== null) {
+    if (m.index === re.lastIndex) {
+        re.lastIndex++;
     }
-    return str;
+    return m[0];
+}
+  /*  if(str.substr(-1) === '/') {
+        return str.substr(0, str.length - 1);
+    }*/
 }
